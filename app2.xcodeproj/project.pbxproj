@@ -14,6 +14,7 @@
 		F6669D22225DD630003C8B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6669D20225DD630003C8B00 /* LaunchScreen.storyboard */; };
 		F6669D2D225DD630003C8B00 /* app2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6669D2C225DD630003C8B00 /* app2Tests.swift */; };
 		F6669D38225DD630003C8B00 /* app2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6669D37225DD630003C8B00 /* app2UITests.swift */; };
+		F6669D47225DD8C7003C8B00 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6669D46225DD8C6003C8B00 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F6669D33225DD630003C8B00 /* app2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6669D37225DD630003C8B00 /* app2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app2UITests.swift; sourceTree = "<group>"; };
 		F6669D39225DD630003C8B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6669D46225DD8C6003C8B00 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6669D47225DD8C7003C8B00 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				F6669D2B225DD630003C8B00 /* app2Tests */,
 				F6669D36225DD630003C8B00 /* app2UITests */,
 				F6669D15225DD62F003C8B00 /* Products */,
+				F6669D45225DD8C6003C8B00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				F6669D39225DD630003C8B00 /* Info.plist */,
 			);
 			path = app2UITests;
+			sourceTree = "<group>";
+		};
+		F6669D45225DD8C6003C8B00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6669D46225DD8C6003C8B00 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EWZS7ZCWJQ;
 				INFOPLIST_FILE = app2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EWZS7ZCWJQ;
 				INFOPLIST_FILE = app2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

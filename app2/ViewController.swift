@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var mWebView: WKWebView!
+    @IBOutlet weak var mLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.addSubview(mWebView)
+        
+        let url = URL(string: "http://www.insprout.com")
+        let urlRequest = URLRequest(url: url!)
+        mWebView.load(urlRequest)
     }
 
 
