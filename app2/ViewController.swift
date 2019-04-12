@@ -18,7 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        self.view.addSubview(mWebView)
+//        self.view.addSubview(mWebView)
+//        self.view.sendSubviewToBack(mWebView)
         
         let url = URL(string: "http://www.insprout.com")
         let urlRequest = URLRequest(url: url!)

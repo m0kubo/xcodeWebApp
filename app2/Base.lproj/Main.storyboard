@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,19 +13,47 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hTs-tB-r85"/>
+                        <viewControllerLayoutGuide type="bottom" id="fYk-ql-gSw"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUR-JL-9iI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="24"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Ldx-WN-qO0">
+                                <rect key="frame" x="0.0" y="694" width="414" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7k1-cI-rxG">
+                                        <rect key="frame" x="0.0" y="0.0" width="112.66666666666667" height="42"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Button1">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhj-Kg-Tv6">
+                                        <rect key="frame" x="150.66666666666666" y="0.0" width="112.66666666666666" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvm-7y-BB1">
+                                        <rect key="frame" x="301.33333333333331" y="0.0" width="112.66666666666669" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUR-JL-9iI">
+                                <rect key="frame" x="0.0" y="20" width="414" height="30"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9B-vV-b5P">
-                                <rect key="frame" x="0.0" y="67" width="414" height="718"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M9B-vV-b5P">
+                                <rect key="frame" x="0.0" y="50" width="414" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -36,18 +63,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="M9B-vV-b5P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="3MO-Im-mvv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M9B-vV-b5P" secondAttribute="trailing" id="7jG-gO-uVQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M9B-vV-b5P" secondAttribute="bottom" constant="77" id="9NA-Dp-5H5"/>
-                            <constraint firstItem="M9B-vV-b5P" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FDI-9U-hMd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CUR-JL-9iI" secondAttribute="trailing" id="GDr-UD-Rjv"/>
-                            <constraint firstItem="M9B-vV-b5P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Szn-WB-AyL"/>
-                            <constraint firstItem="CUR-JL-9iI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bmx-TF-Xp3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M9B-vV-b5P" secondAttribute="bottom" id="hWw-zB-75S"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M9B-vV-b5P" secondAttribute="bottom" id="v2F-MP-87y"/>
-                            <constraint firstItem="CUR-JL-9iI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z64-Rl-Lav"/>
+                            <constraint firstAttribute="trailing" secondItem="Ldx-WN-qO0" secondAttribute="trailing" id="6up-b9-FPG"/>
+                            <constraint firstItem="CUR-JL-9iI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EQK-DW-K8t"/>
+                            <constraint firstItem="Ldx-WN-qO0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="J1r-XI-pQ0"/>
+                            <constraint firstAttribute="bottom" secondItem="Ldx-WN-qO0" secondAttribute="bottom" id="LQd-Be-6Fd"/>
+                            <constraint firstAttribute="trailing" secondItem="CUR-JL-9iI" secondAttribute="trailing" id="tk3-vO-FvN"/>
+                            <constraint firstItem="CUR-JL-9iI" firstAttribute="top" secondItem="hTs-tB-r85" secondAttribute="bottom" id="yod-Dq-Pvx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mLabel" destination="CUR-JL-9iI" id="nz8-kX-Q5V"/>
@@ -56,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1314.4000000000001" y="45.42728635682159"/>
+            <point key="canvasLocation" x="-1314.4927536231885" y="44.836956521739133"/>
         </scene>
     </scenes>
 </document>
